@@ -1,5 +1,7 @@
 import { Mail, Linkedin, Github, Dribbble } from 'lucide-react';
 import Image from 'next/image';
+import ProjectShowcase from "./components/ProjectShowcase";
+import MovingLogos from './components/MovingImages';
 export default function Home() {
   return (
     <main>
@@ -21,13 +23,13 @@ export default function Home() {
             <h1 className='text-9xl text-pink-500 text-center'>Hello <span>!</span></h1>
             <hr className='h-2 w-170' />
             <p>
-              I'm Zeamanuel Fetene, a passionate UI/UX designer dedicated to crafting exceptional digital experiences. With a keen eye for detail and a user-centric approach, I specialize in creating intuitive and visually appealing designs that resonate with users. 
+              I'm Rezan Mohammed, a passionate UI/UX designer dedicated to crafting exceptional digital experiences. With a keen eye for detail and a user-centric approach, I specialize in creating intuitive and visually appealing designs that resonate with users. 
               <br />  My portfolio showcases a diverse range of projects, highlighting my ability to blend creativity with functionality. Explore my work to see how I bring ideas to life through innovative design solutions.
             </p>
             <div >
-             <h3 className='flex flex-cols-2'> <Mail  className='text-pink-500 pr-2 fill-pink-200/50' size={35}/>zeamanuel@gmail.com</h3>
+             <h3 className='flex flex-cols-2'> <Mail  className='text-pink-500 pr-2 fill-pink-200/50' size={35}/>Rezanmoh002@gmail.com</h3>
               <h3 className='flex flex-cols-2'> <Linkedin className='text-pink-500 pr-2 fill-pink-200' size={35}/> linkedin.com/in/zeamanuel</h3>
-              <h3 className='flex flex-cols-2'> <Github className='text-pink-500 pr-2 fill-pink-200' size={35}/> github.com/zeamanuel</h3> 
+              <h3 className='flex flex-cols-2'> <Github className='text-pink-500 pr-2 fill-pink-200' size={35}/>https://github.com/Rezan01</h3> 
             </div>
 
           </div>
@@ -48,24 +50,38 @@ export default function Home() {
   <div className="flex flex-col md:flex-row items-center justify-center gap-10">
     
     {/* Left: Image */}
-    <div className="flex justify-center items-center p-10">
-  <div className="animate-spinY">
-    <Image
-      src="/sece.png"
-      alt="Secondary illustration"
-      height={212}
-      width={308}
-      className="overflow-hidden rounded-lg"
-    />
+    <div className="flex justify-center items-center p-10 perspective-1000">
+  <div className="relative w-[500px] h-[500px] animate-flip3DBounce">
+    {/* Front side */}
+    <div className="absolute inset-0 backface-hidden">
+      <Image
+        src="/algorithms.png"
+        alt="Front side"
+        fill
+        className="object-cover rounded-lg"
+      />
+    </div>
+
+    {/* Back side */}
+    <div className="absolute inset-0 backface-hidden rotateY-180">
+      <Image
+        src="/rezan.png"
+        alt="Back side"
+        fill
+        className="object-cover rounded-lg"
+      />
+    </div>
+    
   </div>
 </div>
+
 
 
     {/* Vertical Divider */}
     <div className="w-[1px] h-100 bg-gray-400 mx-4"></div>
 
     {/* Right: Experience / Education / Skills */}
-    <div className="text-black">
+    <div className="text-black pb-5">
       <div>
       <h2 className="font-semibold mb-2 text-6xl text-pink-500">Experience</h2>
       <ul className="grid md:grid-cols-2 gap-6 text-sm ">
@@ -75,6 +91,11 @@ export default function Home() {
         <li>2023 - Principal Designer at GHI Inc</li>
       </ul>
       </div>
+
+      
+        <hr className='w-130 bg-gray-400 m-4 '/>
+      
+      
       {/* Education */}
       <div>
       <h2 className="font-semibold mb-2 mt-4 text-6xl text-pink-500">Education</h2>
@@ -84,6 +105,7 @@ export default function Home() {
       </ul>
 
       </div>
+      <hr className='w-130 bg-gray-400 m-4 '/>
 
       {/* Skills */}
       <div>
@@ -103,10 +125,20 @@ export default function Home() {
 
       </section>
 
-      {/* The projects */}
+      {/* the frame motion */}
 
-      <section>
+      <section  className="p-3 bg-sky-50 flex m-0 ">
+    
+        <MovingLogos /> 
         
+      </section>
+
+      {/* the projects description */}
+
+      <section className=" flex flex-col items-center justify-center bg-sky-100 p-6">
+        <h1 className="text-6xl text-pink-500 font-bold mb-8">My Projects</h1>
+      <ProjectShowcase />
+
       </section>
 
     </main>

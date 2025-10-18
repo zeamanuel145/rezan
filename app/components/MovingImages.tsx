@@ -1,0 +1,72 @@
+"use client";
+
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+
+const items = [
+  {
+    logo: "/frame-1.png",
+    link: "https://www.figma.com/file/xxxx/Wegiene", // replace with your real link
+  },
+  {
+    logo: "/frame-2.png",
+    link: "https://www.figma.com/file/yyyy/Fetan",
+  },
+  {
+    logo: "/frame-3.png",
+    link: "https://www.figma.com/file/zzzz/PlantFule",
+  },
+  {
+    logo: "/frame-4.png",
+    link: "https://www.figma.com/file/aaaa/BaleHotel",
+  },
+  {
+    logo: "/frame-5.png",
+    link: "https://www.figma.com/file/bbbb/EthioTech",
+  },
+];
+
+export default function MovingLogos() {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start({
+      x: ["0%", "-100%"],
+      transition: { repeat: Infinity, duration: 30, ease: "linear" },
+    });
+  }, [controls]);
+
+  const handleHoverStart = () => controls.stop();
+  const handleHoverEnd = () =>
+    controls.start({
+      x: ["0%", "-100%"],
+      transition: { repeat: Infinity, duration: 30, ease: "linear" },
+    });
+
+  return (
+    <div className="w-full h-40 overflow-hidden bg-gray-100 flex items-center">
+      <motion.div
+        className="flex gap-45 items-center"
+        animate={controls}
+        onMouseEnter={handleHoverStart}
+        onMouseLeave={handleHoverEnd}
+      >
+        {[...items, ...items].map((item, index) => (
+          <a
+            key={index}
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 min-w-fit group hover:scale-105 transition-transform"
+          >
+            <img
+              src={item.logo}
+              alt="logo"
+              className="h-24 w-auto object-contain"
+            />
+          </a>
+        ))}
+      </motion.div>
+    </div>
+  );
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Linkedin, Github, Dribbble } from 'lucide-react';
+import { Mail, Linkedin, Github } from 'lucide-react';
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from 'next/image';

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
 import { useEffect } from "react";
 
 const items = [
@@ -59,7 +60,7 @@ export default function MovingLogos() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 min-w-fit group hover:scale-105 transition-transform"
           >
-            <img
+            <Image
               src={item.logo}
               alt="logo"
               className="h-24 w-auto object-contain"

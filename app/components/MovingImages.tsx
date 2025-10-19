@@ -6,23 +6,23 @@ import { useEffect } from "react";
 const items = [
   {
     logo: "/frame-1.png",
-    link: "https://www.figma.com/file/xxxx/Wegiene", // replace with your real link
+    link: "https://www.figma.com/design/uFpDUXX7QA80NNaa5xRBNI/Plantfuel-Landing-page?node-id=0-1&p=f", // replace with your real link
   },
   {
     logo: "/frame-2.png",
-    link: "https://www.figma.com/file/yyyy/Fetan",
+    link: "https://www.figma.com/design/viaa1o9gS70dtztinEUoGV/plateful?node-id=0-1&p=f",
   },
   {
     logo: "/frame-3.png",
-    link: "https://www.figma.com/file/zzzz/PlantFule",
+    link: "https://www.figma.com/design/lu0zCikZ6CfBjc3CUaMOw3/meskot?node-id=0-1&p=f",
   },
   {
     logo: "/frame-4.png",
-    link: "https://www.figma.com/file/aaaa/BaleHotel",
+    link: "https://www.figma.com/design/RGvOdHFPFY26qIfshKsuIl/Final-Project?t=Lc0UTQ3cbBKwiMTf-1",
   },
   {
     logo: "/frame-5.png",
-    link: "https://www.figma.com/file/bbbb/EthioTech",
+    link: "https://www.figma.com/design/xIaV8pTU5Mkh4dDRZ1KR6i/DirectEd-E-learning-Website?node-id=0-1&p=f",
   },
 ];
 

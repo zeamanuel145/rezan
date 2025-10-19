@@ -17,28 +17,28 @@ const projects = [
     title: "Plateful",
     desc: "Plateful is a purpose driven landing page that connects event organizers and hospitality businesses with local shelters to redistribute untouched leftover food. Designed with warm brown and cream tones, the interface communicates empathy, hope, and community. The project highlights how thoughtful UX can turn waste into impact, transforming generosity into a seamless, tech-enabled system for social good",
     color: "text-red-600",
-    link: "https://www.figma.com/file/yyyy/Fetan",
+    link: "https://www.figma.com/design/viaa1o9gS70dtztinEUoGV/plateful?node-id=0-1&p=f",
   },
   {
     logo: "/frame-3.png",
     title: "Meskott",
     desc: "Meskott is a high-end restaurant redesign project that blends luxury dining with cultural authenticity. The design reimagines the restaurant’s online presence with refined visuals, elegant typography, and a seamless reservation experience. By focusing on user flow and visual hierarchy, the new interface captures the essence of Meskott where fine dining meets artistry and tradition.",
     color: "text-orange-300/50",
-    link: "https://www.figma.com/file/zzzz/PlantFule",
+    link: "https://www.figma.com/design/lu0zCikZ6CfBjc3CUaMOw3/meskot?node-id=0-1&p=f",
   },
   {
     logo: "/frame-4.png",
     title: "Meddical",
     desc: "Meddical is a telemedicine platform  Built with accessibility and trust at its core, it allows patients to consult doctors virtually, manage appointments, and access health resources easily. The design system focuses on clarity, comfort, and emotional reassurance bringing a modern, user-first approach to digital healthcare.",
     color: "text-blue-400",
-    link: "https://www.figma.com/file/aaaa/BaleHotel",
+    link: "https://www.figma.com/design/lu0zCikZ6CfBjc3CUaMOw3/meskot?t=Lc0UTQ3cbBKwiMTf-1 ",
   },
   {
     logo: "/frame-5.png",
     title: "DirectEd",
     desc: "DirectEd is an e-learning platform concept aimed at expanding access to quality education across Africa. The design emphasizes inclusivity, simplicity, and engagement, enabling students to learn anytime, anywhere. Through vibrant visuals and intuitive navigation, DirectEd empowers learners and educators to connect, share knowledge, and grow together.",
     color: "text-green-900",
-    link: "https://www.figma.com/file/bbbb/EthioTech",
+    link: "https://www.figma.com/design/xIaV8pTU5Mkh4dDRZ1KR6i/DirectEd-E-learning-Website?node-id=0-1&p=f",
   },
 ];
 

@@ -75,7 +75,7 @@ export default function Home() {
             <h1 className='text-9xl text-pink-500 text-center'>Hello <span>!</span></h1>
             <hr className='h-2 w-170' />
             <p>
-              I'm Rezan Mohammed, a passionate UI/UX designer dedicated to crafting exceptional digital experiences. With a keen eye for detail and a user-centric approach, I specialize in creating intuitive and visually appealing designs that resonate with users. 
+              I&apos;m Rezan Mohammed, a passionate UI/UX designer dedicated to crafting exceptional digital experiences. With a keen eye for detail and a user-centric approach, I specialize in creating intuitive and visually appealing designs that resonate with users. 
               <br />  My portfolio showcases a diverse range of projects, highlighting my ability to blend creativity with functionality. Explore my work to see how I bring ideas to life through innovative design solutions.
             </p>
             <div >

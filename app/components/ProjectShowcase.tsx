@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
@@ -71,7 +72,7 @@ export default function ProjectShowcase() {
           className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-6 px-4 md:px-8"
         >
           {/* Image on the left */}
-          <img
+          <Image
             src={project.logo}
             alt={project.title}
             className="h-32 w-32 object-contain md:h-40 md:w-40"

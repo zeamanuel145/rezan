@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const items = [
   {
     logo: "/frame-1.png",
-    link: "https://www.figma.com/design/uFpDUXX7QA80NNaa5xRBNI/Plantfuel-Landing-page?node-id=0-1&p=f", // replace with your real link
+    link: "https://www.figma.com/design/uFpDUXX7QA80NNaa5xRBNI/Plantfuel-Landing-page?node-id=0-1&p=f", 
   },
   {
     logo: "/frame-2.png",
@@ -63,6 +63,8 @@ export default function MovingLogos() {
             <Image
               src={item.logo}
               alt="logo"
+               width={96}
+              height={96}               
               className="h-24 w-auto object-contain"
             />
           </a>

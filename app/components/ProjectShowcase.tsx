@@ -11,7 +11,7 @@ const projects = [
     title: "Plant Fule",
     desc: "PlantFuel is a modern landing page for a sustainable snack brand that promotes plant-based performance nutrition. The clean, energetic design reflects the brand’s commitment to health, balance, and eco-conscious living. Through bold visuals and crisp typography, PlantFuel inspires users to make smarter food choices  proving that sustainability and flavor can fuel an active lifestyle together.",
     color: "text-green-800",
-    link: "https://www.figma.com/file/xxxx/Wegiene",
+    link: "https://www.figma.com/design/uFpDUXX7QA80NNaa5xRBNI/Plantfuel-Landing-page?node-id=0-1&p=f",
   },
   {
     logo: "/frame-1.png",
@@ -75,6 +75,8 @@ export default function ProjectShowcase() {
           <Image
             src={project.logo}
             alt={project.title}
+            width={128}
+            height={128}   
             className="h-32 w-32 object-contain md:h-40 md:w-40"
           />
 

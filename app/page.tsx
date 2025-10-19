@@ -163,10 +163,10 @@ export default function Home() {
       <div>
       <h2 className="font-semibold mb-2 text-6xl text-pink-500">Experience</h2>
       <ul className="grid md:grid-cols-2 gap-6 text-sm ">
-        <li>2018 - UI/UX Designer at XYZ Company</li>
-        <li>2020 - Senior Designer at ABC Agency</li>
-        <li>2022 - Lead Designer at DEF Corp</li>
-        <li>2023 - Principal Designer at GHI Inc</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
       </div>
 

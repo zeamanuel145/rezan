@@ -163,7 +163,7 @@ export default function Home() {
                 Experience
               </h2>
               <ul className="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
-                <li>👩‍💻 UI/UX Intern — DirectEd</li>
+                <li>👩‍💻 UI/UX  — DirectEd</li>
                 <li>🌐 Freelance Designer</li>
                 <li>💼 Front-End Developer (Personal Projects)</li>
                 <li>🎨 Graphic Design for Digital Campaigns</li>
